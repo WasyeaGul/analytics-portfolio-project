@@ -1,36 +1,46 @@
 -- ============================================
--- Project: Analytics Portfolio Project
+-- Project: Banking Credit Risk Analytics
 -- File: 01_data_exploration.sql
--- Purpose: Initial data exploration and summary
+-- Purpose: Explore credit card default behavior
 -- ============================================
 
 -- Preview the dataset
 SELECT *
-FROM dataset
+FROM credit_default
 LIMIT 10;
 
--- Count total records
-SELECT COUNT(*) AS total_rows
-FROM dataset;
+-- Total number of customers
+SELECT COUNT(*) AS total_customers
+FROM credit_default;
 
--- Check for missing values in key fields
+-- Overall default rate
 SELECT
-    SUM(CASE WHEN customer_id IS NULL THEN 1 ELSE 0 END) AS missing_customer_id,
-    SUM(CASE WHEN revenue IS NULL THEN 1 ELSE 0 END) AS missing_revenue
-FROM dataset;
+    AVG(default_payment_next_month) AS default_rate
+FROM credit_default;
 
--- Basic summary statistics
+-- Average credit limit by default status
 SELECT
-    AVG(revenue) AS avg_revenue,
-    MIN(revenue) AS min_revenue,
-    MAX(revenue) AS max_revenue
-FROM dataset;
+    default_payment_next_month,
+    AVG(credit_limit) AS avg_credit_limit
+FROM credit_default
+GROUP BY default_payment_next_month;
 
--- Grouped analysis example
+-- Default rate by education level
 SELECT
-    region,
-    COUNT(*) AS customers,
-    AVG(revenue) AS avg_revenue
-FROM dataset
-GROUP BY region
-ORDER BY avg_revenue DESC;
+    education,
+    AVG(default_payment_next_month) AS default_rate
+FROM credit_default
+GROUP BY education
+ORDER BY default_rate DESC;
+
+-- Default rate by age group
+SELECT
+    CASE
+        WHEN age < 30 THEN 'Under 30'
+        WHEN age BETWEEN 30 AND 50 THEN '30–50'
+        ELSE 'Over 50'
+    END AS age_group,
+    AVG(default_payment_next_month) AS default_rate
+FROM credit_default
+GROUP BY age_group
+ORDER BY default_rate DESC;
