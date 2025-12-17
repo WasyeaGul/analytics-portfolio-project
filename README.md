@@ -6,7 +6,7 @@ End-to-end SQL + Python analytics project focused on data exploration, modeling,
 ## 📊 Interactive Dashboard
 
 View the Tableau Public dashboard:
-https://public.tableau.com/views/CreditCardDefaultRiskAnalysis/...
+[https://public.tableau.com/views/CreditCardDefaultRiskAnalysis/...](https://public.tableau.com/app/profile/wasyea.gul/viz/CreditCardDefaultRiskAnalysis/Dashboard1?publish=yes)
 
 
 ## Key Files
