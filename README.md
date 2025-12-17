@@ -8,13 +8,13 @@ View the Tableau Public dashboard:
 https://public.tableau.com/views/CreditCardDefaultRiskAnalysis/...
 
 SQL Analysis (Credit Risk Exploration):
-data/sql/01_data_exploration.sql
+data/sql/01_data_exploration.sql 
 
 Python Analysis (Credit Risk Modeling):
-src/01_credit_risk_analysis.py
+src/01_credit_risk_analysis.py 
 
 Dataset Information:
-data/README.md
+data/README.md 
 
 ## Tools & Technologies
 - Python (pandas, numpy, matplotlib, scikit-learn)
