@@ -7,8 +7,6 @@ End-to-end analytics project using SQL and Python to explore credit card default
 View the Tableau Public dashboard:
 https://public.tableau.com/views/CreditCardDefaultRiskAnalysis/...
 
-## Key Files
-
 SQL Analysis (Credit Risk Exploration):
 data/sql/01_data_exploration.sql
 
