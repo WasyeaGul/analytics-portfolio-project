@@ -7,14 +7,17 @@ End-to-end analytics project using SQL and Python to explore credit card default
 View the Tableau Public dashboard:
 https://public.tableau.com/views/CreditCardDefaultRiskAnalysis/...
 
-SQL Analysis (Credit Risk Exploration):
-data/sql/01_data_exploration.sql 
+## Key Files
 
-Python Analysis (Credit Risk Modeling):
-src/01_credit_risk_analysis.py 
+- **SQL Analysis (Credit Risk Exploration)**  
+  [01_data_exploration.sql](data/sql/01_data_exploration.sql)
 
-Dataset Information:
-data/README.md 
+- **Python Analysis (Credit Risk Modeling)**  
+  [01_credit_risk_analysis.py](src/01_credit_risk_analysis.py)
+
+- **Dataset Information**  
+  [Dataset README](data/README.md)
+
 
 ## Tools & Technologies
 - Python (pandas, numpy, matplotlib, scikit-learn)
