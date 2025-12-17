@@ -3,6 +3,12 @@
 ## Project Overview
 End-to-end SQL + Python analytics project focused on data exploration, modeling, and business insights.
 
+## 📊 Interactive Dashboard
+
+View the Tableau Public dashboard:
+https://public.tableau.com/views/CreditCardDefaultRiskAnalysis/...
+
+
 ## Key Files
 - **SQL Analysis (Credit Risk Exploration):**  
 [data/sql/01_data_exploration.sql](data/sql/01_data_exploration.sql)
